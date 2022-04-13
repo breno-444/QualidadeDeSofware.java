@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Pratica01ex01 {
+public class Pratica02ex01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int x, y, z, soma;
@@ -15,7 +15,7 @@ public class Pratica01ex01 {
 
 
 
-
+ 
         input.close();
     }
    

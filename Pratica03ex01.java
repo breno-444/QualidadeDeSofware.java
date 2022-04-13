@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
-public class Pratica03ex03 {
+public class Pratica03ex01 {
+    public static void main(String[] args) {
+        
+    
     Scanner input = new Scanner(System.in);{
         int x, y, z, soma;
         System.out.println("Informe a primeira nota");
@@ -9,10 +12,11 @@ public class Pratica03ex03 {
         y = input.nextInt();
         System.out.println("Informe a terceira nota");
         z = input.nextInt();
-        soma = x + y + z / 3;
+        soma = (x + y + z) / 3 ;
         System.out.println("A media é = " + soma );
         
         input.close();
 
     }
+}
 }
