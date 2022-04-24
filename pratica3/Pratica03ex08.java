@@ -1,3 +1,4 @@
+package pratica3;
 import java.util.Scanner;
 
 public class Pratica03ex08 {
