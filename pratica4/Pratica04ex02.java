@@ -1,4 +1,4 @@
-package pratica3;
+package pratica4;
 import java.util.Scanner;
 
 public class Pratica04ex02 {

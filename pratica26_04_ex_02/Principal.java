@@ -14,6 +14,8 @@ public class Principal {
         minhaConta.setConta(input.nextInt());
         System.out.println("Digite a quantia para depositar: ");
         minhaConta.setDepositar(input.nextDouble());
+        System.out.println("Digite a quantia para sacar: ");
+        minhaConta.SetSacar(input.nextDouble());
 
         minhaConta.exibe();
 

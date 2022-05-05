@@ -2,12 +2,14 @@ package pratica26_04_ex_02;
 
 public class ContaCorrente {
     private int conta, agencia;
-    private double saldo, depositar, sacar;
+    private double depositar, sacar;
 
-    public void setinicializarContaCorrente(int c, int ag) {
+    public void setinicializarContaCorrente(int c, int ag, double dep, double sac, int sal) {
         conta = c;
         agencia = ag;
-        saldo = 10;
+        depositar = dep;
+        sacar = sac;
+       
     }
 
     public int getAgencia() {
@@ -28,37 +30,31 @@ public class ContaCorrente {
         conta = c;
     }
 
-    public double getSaca() {
-        return (sacar);
-    }
-
-    public void setSaca(double saca) {
-        sacar = saca;
-    }
-
-    public void sacar(double valor) {
-        saldo = saldo - valor;
-    }
-
     public double getDepositar() {
         return (depositar);
     }
 
-    public void setDepositar(double deposito) {
-        depositar = deposito;
+    public void setDepositar(double sa) {
+        depositar = sa;
     }
 
-    public void depositar(double valor) {
-        saldo = saldo + valor;
+    public double getSacar() {
+        return (sacar);
     }
 
-    public double consultarSaldo() {
-        return (saldo);
+    public void SetSacar(double sac) {
+        sacar = sac;
+    }
+    public double sacar() {
+        return depositar - sacar;
     }
 
     public void exibe() {
         System.out.println("Agência: " + this.getAgencia());
         System.out.println("Conta: " + this.getConta());
-        System.out.println("Saldo:R$ " + this.consultarSaldo());
+        System.out.println("Deposito:R$ " + this.getDepositar());
+        System.out.println("Saldo:R$ " + this.sacar());
+        
+
     }
 }
