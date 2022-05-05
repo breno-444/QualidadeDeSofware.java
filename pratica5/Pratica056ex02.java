@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Pratica056ex02 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int a = 0, b = 0, c = 0, m = 0, media, contador = 0;
+        int a = 0, b = 0, c = 0, m = 0, media,contador  = 0;
         while (m >= 0) {
             System.out.println("Digite a matricula: ");
             m = input.nextInt();
